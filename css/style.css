@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --hover: #e23e38;
+}
+
+.main_overly{
+    position: relative;
+    z-index: 1;
+}
+
+.main_overly:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.6);  
+}
+
+.clr{
+    clear: both;
+}
+
+/* ===============================================
+                Common css end
+================================================*/
+
+/* ===============================================
+                Menu part start
+================================================*/
+.main_menu{
+    height: 50px;
+    
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 100%;
+    z-index: 999;
+}
+.main_menu .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+.main_menu .navbar-brand{
+    font-size: 25px;
+    color: #dfd7d7;
+    font-weight: 800;
+}
+.main_menu ul li a{
+    color: #f1f1f1;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 0 10px;
+    line-height: 50px;
+    position: relative;
+}
+.main_menu ul li a:hover{
+    background: #fff;
+    color: #222;
+}
+
+.main_menu ul li a:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: var(--hover);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_menu ul li a:hover:after{
+    width: 100%;
+}
+.main_menu .nav-right{
+    display: flex;
+    gap: 30px; 
+}
+.main_menu .nav-right p{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 40px;
+
+}
+.main_menu .nav-right p i{
+    font-size: 10px;
+    padding: 0 5px;
+   
+    
+}
+.main_menu .nav-right .nav-right-text{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: #e23e38;
+    color: #dfd7d7;
+    transition: all linear .4s;
+    text-align: center;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+}
+
+/* ===============================================
+                Menu part end
+================================================*/
+
+/* ===============================================
+                Banner part start
+================================================*/
+.banner_item{
+    padding: 254px 0 117px;
+    
+}
+
+.banner-text h2{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    padding-bottom: 15px;
+}
+.banner-text h1{
+    font-size: 50px;
+    font-weight:700;
+    padding-bottom: 40px;
+}
+.banner-text a{
+    padding: 10px 25px;
+    background: #e23e38;
+    color: #D3D2D2;
+}
+
+#banner .slick-dots{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+#banner .slick-dots  li button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#banner .slick-dots li.slick-active button{
+    width: 20px;
+    height: 20px;
+    background: var(--hover);
+    border-color: var(--hover);
+} 
+/* ===============================================
+                Banner part end
+================================================*/
+
+/* ===============================================
+                About part start
+================================================*/
+#food-about{
+    padding: 80px 0;
+}
+
+.about-content .story{
+    text-transform: uppercase;
+    color: #D3D2D2;
+    font-size: 13px;
+    font-weight: 600;
+}
+.about-content h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.about-content .content{
+    color: #000;
+    padding-bottom: 20px;
+}
+.about-content .content span{
+    margin: 10px 0;
+}
+
+.about-img img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+
+
+
+
+
+/* ===============================================
+                meet part start
+================================================*/
+#meet{
+    padding: 100px 0;
+    background: #F9F9F9;
+}
+
+.meet-img img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+.header-title{
+    text-align: center;
+}
+.header-title h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.header-title p{
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 50px;
+    color: #D3D2D2;
+    text-transform: uppercase;
+   word-spacing: 2px;
+}
+.meet-content{
+    text-align: center;
+}
+.meet-content .meet-content-title{
+    font-size: 26px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.meet-content .meet-content-profession{
+    color:  #D3D2D2;
+    font-size: 17px;
+    font-weight: 700;
+}
+/* ===============================================
+                meet part end
+================================================*/
+
+/* ===============================================
+                Food Menu part start
+================================================*/
+
+#food-menu{
+    padding: 80px 0;
+}
+
+.food-menu-img img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+#food-menu .remove-margin{
+    margin-right: 0;
+}
+
+.testimonials{
+    background: #7F7F7F;
+    padding: 80px 0;
+}
+.testimonials h2{
+    color: #f1f1f1;
+    padding-bottom: 50px;
+}
+.testimonials .testimonials-text1, .testimonials-text2{
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    line-height: 33px;
+}
+.testimonials .testimonials-digital{
+    padding-top: 20px;
+}
+
+#food-menu .slick-dots{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 97%;
+    bottom: 30px;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+#food-menu .slick-dots  li button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#food-menu .slick-dots li.slick-active button{
+    width: 20px;
+    height: 20px;
+    background: var(--hover);
+    border-color: var(--hover);
+}
+
+.testimonials-container .testimonials-digital b{
+    color:  #dfd7d7;
+    padding-right: 10px;
+    font-size: 21px;
+}
+.testimonials-container .testimonials-digital{
+    color: #fff;
+}
+
+/* ===============================================
+                Food Menu part end
+================================================*/
+
+/* ===============================================
+                Contact part start
+================================================*/
+
+#contact{
+    padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#contact .contact-us{
+    margin-bottom: 30px;
+}
+
+.contact-form .full-name{
+    margin-right: 5px;
+    width: 49%;
+}
+.google-map{
+    width: 80%;
+  
+}
+.contact-form .email{
+    width: 49%;
+    
+}
+.contact-form .subject{
+    height: 100%;
+    width: 100%;
+}
+.contact-form .text-area{
+    width: 100%;
+
+}
+.contact-form .btn-send{
+    width: 100%;
+    background: #e23e38;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(240, 232, 232);
+    font-weight: 600;
+    cursor: pointer;
+}
+.contact-form input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: #9e9797;
+    padding-bottom: 20px;
+}
+
+.contact-form textarea{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: #9e9797;
+    padding-bottom: 20px;
+}
+.shape{
+    margin-top: 80px;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.048);
+}
+/* ===============================================
+                Contact part end
+================================================*/
+
+/* ===============================================
+                Footer part start
+================================================*/
+
+#footer{
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+#footer h3{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.footer-img-overly{
+    position: relative;
+    z-index: 1;
+}
+
+.footer-img-overly:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* .footer-img{
+    position: absolute;
+    top: 50px;
+  
+   
+} */
+.footer-img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.514);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.hours-time{
+    color: #fff;
+    
+}
+.footer-hours .close{
+    color: rgb(184, 176, 176);
+}
+
+.icon i{
+    margin: 0 15px;
+    margin-bottom: 24px;
+    color: #e23e38;
+}
+.copyright p{
+    font-size: 16px;
+    color: #928888;
+}
+.footer-title p{
+    color: #928888;
+}
+.design p{
+    color: #928888;
+    padding-top: 20px;
+}
+/* ===============================================
+                Footer part end
+================================================*/
+
+
+
+/* ===============================================
+                Menu part start
+================================================*/
+
+/* ===============================================
+                Menu part end
+================================================*/
+
+
+/* ===============================================
+                Menu part start
+================================================*/
+
+/* ===============================================
+                Menu part end
+================================================*/
